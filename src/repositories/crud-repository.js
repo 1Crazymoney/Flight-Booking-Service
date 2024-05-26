@@ -1,6 +1,6 @@
 const { where } = require('sequelize');
 const {Logger} = require('../config');
-const AppError = require('../Utils/errors/app-error');
+const AppError = require('../utils/errors/app-error');
 
 const { StatusCodes } = require('http-status-codes');
 
@@ -53,4 +53,4 @@ class CrudRepository{
         } 
 }
 
-module.exports = CrudRepository;
+module.exports = { CrudRepository };
