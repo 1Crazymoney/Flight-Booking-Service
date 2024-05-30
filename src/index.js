@@ -3,7 +3,10 @@ const {serverConfig,Logger} = require('./config');
 const apiRoutes = require('./routes');
 
 const app = express();
+
 app.use('/api',apiRoutes);
+app.use('bookingService',apiRoutes);
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
