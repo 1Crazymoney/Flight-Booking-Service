@@ -2,7 +2,7 @@ const { StatusCodes } = require('http-status-codes');
 const { Op } = require("sequelize");
 
 const { Booking } = require('../models');
-const CrudRepository = require('./crud-repository');
+const {CrudRepository} = require('./crud-repository');
 const {enums} = require('../utils/common');
 const { CANCELLED, BOOKED } = enums.bookingStatus;
 
